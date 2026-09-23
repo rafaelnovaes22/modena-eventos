@@ -89,7 +89,7 @@ a{color:inherit}
 .sg-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 .sg-c{border-radius:var(--rd2);overflow:hidden;background:var(--pn);border:1px solid var(--ln);display:flex;flex-direction:column}
 .sg-t{aspect-ratio:16/8;display:flex;align-items:center;justify-content:center;background:#100d0e;border-bottom:1px solid var(--ln)}
-.sg-t svg{width:64px;height:64px}
+.sg-t{position:relative}.sg-t svg{width:64px;height:64px}.sg-t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .sg-c div.sg-b{padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
 .sg-c e{font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--rd);font-weight:700}
 .sg-c h3{font-family:"Instrument Serif",serif;font-weight:400;font-size:1.4rem;margin:0}
@@ -243,24 +243,24 @@ var $=function(s,c){return (c||document).querySelector(s)};
 var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
 /* dados reais da operação */
 var SG=[
-{id:"r1",q:"quarteto de cordas entrada casamento ao vivo",s:"Clássica",c:"Solene",mo:["Cerimônia"],d:"Violinos e teclado na entrada: Pachelbel, Bach e Ave Maria com arco de solenidade."},
-{id:"r2",q:"voz e violao MPB casamento acustico",s:"MPB",c:"Emocionante",mo:["Cerimônia"],d:"Voz e violão em português para entradas: declaração próxima, sem grandiosidade forçada."},
-{id:"r3",q:"piano e voz entrada casamento ao vivo",s:"Pop",c:"Emocionante",mo:["Cerimônia"],d:"Piano e voz nos grandes temas internacionais, do noivo às alianças."},
-{id:"r4",q:"coral casamento igreja entrada",s:"Clássica",c:"Solene",mo:["Cerimônia"],d:"Coral e quarteto de cordas para cerimônias religiosas e espaços grandes."},
-{id:"r5",q:"saxofone casamento cerimonia instrumental",s:"Jazz",c:"Leve",mo:["Cerimônia","Recepção"],d:"Sax instrumental elegante: assinaturas, cumprimentos e coquetel sem interromper a conversa."},
-{id:"r6",q:"jazz bossa nova recepcao casamento",s:"Jazz",c:"Leve",mo:["Recepção"],d:"Bossa e jazz em trio. Clima de restaurante bom para receber e brindar."},
-{id:"r7",q:"MPB acustica jantar casamento",s:"MPB",c:"Leve",mo:["Recepção"],d:"Acústico brasileiro para o jantar: Marisa, Nando, Melim no volume da conversa."},
-{id:"r8",q:"anos 80 festa casamento banda",s:"Anos 60-80",c:"Leve",mo:["Recepção"],d:"Clássicos dançantes em versão lounge para aquecer a pista antes da festa."},
-{id:"r9",q:"sertanejo acustico festa casamento",s:"Sertanejo",c:"Emocionante",mo:["Recepção","Festa"],d:"Do modão acústico ao universitário: voz, violão e sanfona quando a família pede."},
-{id:"r10",q:"banda casamento pop festa ao vivo",s:"Pop",c:"Pista cheia",mo:["Festa"],d:"Banda completa nos hits cantados a plenos pulmões, do refrão ao bis."},
-{id:"r11",q:"sertanejo pagode festa casamento pista",s:"Sertanejo",c:"Pista cheia",mo:["Festa"],d:"Sofrência e moda de viola em sequência com pagode: a pista não esvazia."},
-{id:"r12",q:"pagode festa casamento animada",s:"Pagode",c:"Pista cheia",mo:["Festa"],d:"Banjo, tantã e coro junto: o bloco que levanta até tio sentado."},
-{id:"r13",q:"forro sanfona festa casamento",s:"Forró",c:"Pista cheia",mo:["Festa"],d:"Sanfona, zabumba e triângulo: pisadinha e forró para dançar agarradinho."},
-{id:"r14",q:"rock festa casamento banda ao vivo",s:"Rock",c:"Pista cheia",mo:["Festa"],d:"Guitarra, baixo e bateria nos clássicos: do Queen ao Capital, todo mundo canta."},
-{id:"r15",q:"black music soul funk festa casamento",s:"Black music",c:"Pista cheia",mo:["Festa"],d:"Soul, funk e disco com metais: groove de pista com naipe de trompetes e sax."},
-{id:"r16",q:"axe festa casamento pista cheia",s:"Axé",c:"Pista cheia",mo:["Festa"],d:"Energia de carnaval com percussão: o pico da noite antes do parabéns."},
-{id:"r17",q:"DJ festa casamento pista cheia",s:"Eletrônica",c:"Pista cheia",mo:["Festa"],d:"DJ residente com controladora e iluminação: pista até o fim sem pausa."},
-{id:"r18",q:"disco anos 70 80 festa casamento",s:"Disco",c:"Pista cheia",mo:["Festa"],d:"Clássicos 70-80 com brilho: transição perfeita entre banda e DJ."}
+{id:"r1",yt:"KtIYEVMKPg4",s:"Clássica",c:"Solene",mo:["Cerimônia"],d:"Violinos e teclado na entrada: Pachelbel, Bach e Ave Maria com arco de solenidade."},
+{id:"r2",yt:"Y-EqN6I6ES8",s:"MPB",c:"Emocionante",mo:["Cerimônia"],d:"Voz e violão em português para entradas: declaração próxima, sem grandiosidade forçada."},
+{id:"r3",yt:"oHhzVHtU4hY",s:"Pop",c:"Emocionante",mo:["Cerimônia"],d:"Piano e voz nos grandes temas internacionais, do noivo às alianças."},
+{id:"r4",yt:"PmmlneUwLCw",s:"Clássica",c:"Solene",mo:["Cerimônia"],d:"Coral e quarteto de cordas para cerimônias religiosas e espaços grandes."},
+{id:"r5",yt:"3VuM-5MGRno",s:"Jazz",c:"Leve",mo:["Cerimônia","Recepção"],d:"Sax instrumental elegante: assinaturas, cumprimentos e coquetel sem interromper a conversa."},
+{id:"r6",yt:"0jj9IRJchc0",s:"Jazz",c:"Leve",mo:["Recepção"],d:"Bossa e jazz em trio. Clima de restaurante bom para receber e brindar."},
+{id:"r7",yt:"KCPToMZTNMc",s:"MPB",c:"Leve",mo:["Recepção"],d:"Acústico brasileiro para o jantar: Marisa, Nando, Melim no volume da conversa."},
+{id:"r8",yt:"1nd-7_9rp-E",s:"Anos 60-80",c:"Leve",mo:["Recepção"],d:"Clássicos dançantes em versão lounge para aquecer a pista antes da festa."},
+{id:"r9",yt:"la2ZfTWe4cs",s:"Sertanejo",c:"Emocionante",mo:["Recepção","Festa"],d:"Do modão acústico ao universitário: voz, violão e sanfona quando a família pede."},
+{id:"r10",yt:"VxRTzRnFbJY",s:"Pop",c:"Pista cheia",mo:["Festa"],d:"Banda completa nos hits cantados a plenos pulmões, do refrão ao bis."},
+{id:"r11",yt:"_5nzuG8XydA",s:"Sertanejo",c:"Pista cheia",mo:["Festa"],d:"Sofrência e moda de viola em sequência com pagode: a pista não esvazia."},
+{id:"r12",yt:"QMETo-p2YA0",s:"Pagode",c:"Pista cheia",mo:["Festa"],d:"Banjo, tantã e coro junto: o bloco que levanta até tio sentado."},
+{id:"r13",yt:"0VFfbMtL8qU",s:"Forró",c:"Pista cheia",mo:["Festa"],d:"Sanfona, zabumba e triângulo: pisadinha e forró para dançar agarradinho."},
+{id:"r14",yt:"-bUPR_5m2zI",s:"Rock",c:"Pista cheia",mo:["Festa"],d:"Guitarra, baixo e bateria nos clássicos: do Queen ao Capital, todo mundo canta."},
+{id:"r15",yt:"wkLO79-CQKA",s:"Black music",c:"Pista cheia",mo:["Festa"],d:"Soul, funk e disco com metais: groove de pista com naipe de trompetes e sax."},
+{id:"r16",yt:"0SebO1lskP0",s:"Axé",c:"Pista cheia",mo:["Festa"],d:"Energia de carnaval com percussão: o pico da noite antes do parabéns."},
+{id:"r17",yt:"0Hwlz8dckMA",s:"Eletrônica",c:"Pista cheia",mo:["Festa"],d:"DJ residente com controladora e iluminação: pista até o fim sem pausa."},
+{id:"r18",yt:"yVwXPeYcd3E",s:"Disco",c:"Pista cheia",mo:["Festa"],d:"Clássicos 70-80 com brilho: transição perfeita entre banda e DJ."}
 ];
 var MOM=["Cerimônia","Recepção","Festa"];
 var F={m:"",s:"",q:""};
@@ -288,7 +288,7 @@ if(F.s&&s.s!==F.s)return;
 if(F.q&&(s.s+" "+s.c+" "+s.d).toLowerCase().indexOf(F.q)<0)return;
 n++;
 var c=document.createElement("article");c.className="sg-c rv on";
-c.innerHTML='<div class="sg-t">'+MLOGO+'</div><div class="sg-b"><e>'+s.s+" · "+s.c+"</e><h3>"+s.s+"</h3><p>"+s.d+"</p><tg>"+s.mo.map(function(m){return "<span>"+m+"</span>"}).join("")+'</tg><f><a href="https://www.youtube.com/results?search_query='+encodeURIComponent(s.q)+'" target="_blank" rel="noopener">Ouvir</a><a href="https://www.casamentos.com.br/musica-de-casamento/banda-modena-eventos--e191882" target="_blank" rel="noopener">Orçamento</a><button data-f="'+s.id+'" class="'+(favs[s.id]?"fv":"")+'" aria-label="Salvar estilo">'+(favs[s.id]?"★":"☆")+"</button></f></div>";
+c.innerHTML='<div class="sg-t">'+MLOGO+'<img src="https://i.ytimg.com/vi/'+s.yt+'/hqdefault.jpg" alt="'+s.s+', ao vivo" loading="lazy" onerror="this.remove()"></div><div class="sg-b"><e>'+s.s+" · "+s.c+"</e><h3>"+s.s+"</h3><p>"+s.d+"</p><tg>"+s.mo.map(function(m){return "<span>"+m+"</span>"}).join("")+'</tg><f><a href="https://www.youtube.com/watch?v='+s.yt+'" target="_blank" rel="noopener">Ouvir</a><a href="https://www.casamentos.com.br/musica-de-casamento/banda-modena-eventos--e191882" target="_blank" rel="noopener">Orçamento</a><button data-f="'+s.id+'" class="'+(favs[s.id]?"fv":"")+'" aria-label="Salvar estilo">'+(favs[s.id]?"★":"☆")+"</button></f></div>";
 g.appendChild(c);
 });
 $("#ct").innerHTML="Mostrando <b>"+n+"</b> de 18 palcos";
